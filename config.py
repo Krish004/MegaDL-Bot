@@ -6,12 +6,12 @@ import os
 
 class Config:
     API_ID = int(os.environ.get("API_ID", 123))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_HASH = os.environ.get("API_HASH", '3448177952613312689f44b9d909b5d3')
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5284775099:AAGfvarbQNwchELlbs-ZcNJGwnuFez9_vZg")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     TG_MAX_SIZE = 2040108421
-    OWNER_ID = int(os.environ.get("OWNER_ID", 1316963576))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", '1169076058'))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", '1804274279'))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
 
 
@@ -25,11 +25,11 @@ class TEXT:
 
 📡 **Hosted On:** [Heroku](https://heroku.com)
 
-🧑‍💻 **Developer:** [Safone](https://t.me/ImSafone)
+🧑‍💻 **Developer:** [Saravan Krish](https://t.me/SaravanKrish)
 
-👥 **Support Group:** [AsmSupport](https://t.me/AsmSupport)
+👥 **Support Group:** [TamilSupport](https://t.me/TamilSupport)
 
-📢 **Updates Channel:** [Ｓ１ ＢＯＴＳ](https://t.me/AsmSafone)
+📢 **Updates Channel:** [Tamil Bots](https://t.me/TamilBots)
 """
 
   HELP_USER = """
@@ -37,7 +37,7 @@ This is **{bot_name}**
 
 This Bot Can Download Files & Videos From Mega Links & Upload To Telegram. Just Send Any Mega.nz Link & See The Magic. You Can Also Add or Change Caption: Just Select An Uploaded File/ Video or Forward Me Any Telegram File & Then Write The Text You Want To Be Caption On The File As A Reply To That File & The Text You Wrote Will Be Attached As Caption 😁! 
 
-**Made With ❤️ By @AsmSafone! 👑**
+**Made With ❤️ By @TamilBots! 👑**
 """
 
   START_TEXT = """
