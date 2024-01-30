@@ -5,6 +5,7 @@ import os
 import asyncio
 from config import Config
 from pyrogram import Client, idle
+from pyrogram.errors import FloodWait
 
 if __name__ == "__main__" :
     if not os.path.isdir(Config.DOWNLOAD_LOCATION):
@@ -18,7 +19,7 @@ if __name__ == "__main__" :
         plugins=plugins
     )
     app.start()
-    print('\n\n>>> MegaDL-Bot Started. Join @AsmSafone!')
+    print('\n\n>>> MegaDL-Bot Started. Join @TamilBots!')
     idle()
     app.stop()
-    print('\n\n>>> MegaDL-Bot Stopped. Join @AsmSafone!')
+    print('\n\n>>> MegaDL-Bot Stopped. Join @TamilBots!')
