@@ -25,7 +25,7 @@ async def help(bot, message, cb=False):
         InlineKeyboardButton(f'🏠 HOME', callback_data='back'),
         InlineKeyboardButton(f'ABOUT 👨', callback_data='about')
         ],[
-        InlineKeyboardButton(f'📦 SOURCE', url='https://github.com/AsmSafone/MegaDL-Bot'),
+        InlineKeyboardButton(f'📦 SOURCE', url='https://t.me/saravanakrish'),
         InlineKeyboardButton(f'CLOSE 🔐', callback_data='close')
         ]]
     reply_markup = InlineKeyboardMarkup(button)
@@ -57,7 +57,7 @@ async def start(bot, message, cb=False):
         InlineKeyboardButton(f'💡 HELP', callback_data='help'),
         InlineKeyboardButton(f'ABOUT 👨', callback_data="about")
         ],[
-        InlineKeyboardButton(f'📦 SOURCE', url='https://github.com/AsmSafone/MegaDL-Bot'),
+        InlineKeyboardButton(f'📦 SOURCE', url='https://t.me/saravanakrish'),
         InlineKeyboardButton(f'CLOSE 🔐', callback_data="close")
         ]]
     reply_markup = InlineKeyboardMarkup(button)
@@ -87,7 +87,7 @@ async def about(bot, message, cb=False):
         InlineKeyboardButton(f'🏠 HOME', callback_data='back'),
         InlineKeyboardButton(f'HELP 💡', callback_data='help')
         ],[
-        InlineKeyboardButton(f'📦 SOURCE', url='https://github.com/AsmSafone/MegaDL-Bot'),
+        InlineKeyboardButton(f'📦 SOURCE', url='https://t.me/saravanakrish'),
         InlineKeyboardButton(f'CLOSE 🔐', callback_data="close")
         ]]
     reply_markup = InlineKeyboardMarkup(button)
@@ -138,7 +138,7 @@ async def refreshmeh_cb(bot, message):
             user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), message.from_user.id)
             if user.status == "kicked":
                 await message.message.edit(
-                    text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/AsmSupport).",
+                    text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/TamilSupport).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -161,7 +161,7 @@ async def refreshmeh_cb(bot, message):
             return
         except Exception:
             await message.message.edit(
-                text="Something Went Wrong. Contact My [Support Group](https://t.me/AsmSupport).",
+                text="Something Went Wrong. Contact My [Support Group](https://t.me/TamilSupport).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
