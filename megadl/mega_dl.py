@@ -15,7 +15,7 @@ from functools import partial
 from genericpath import isfile
 from hurry.filesize import size
 from asyncio import get_running_loop
-from pyrogram import Client, filters
+from pyrogram import Client, filters, ContinuePropagation
 from megadl.progress import progress_for_pyrogram
 from megadl.forcesub import handle_force_subscribe
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
