@@ -7,7 +7,7 @@ from pyrogram.types import Message, ChatPermissions
 from pyrogram import filters, Client, ContinuePropagation
 
 
-@Client.on_message(filters.reply & filters.text & filters.private & ~filters.edited)
+@Client.on_message(filters.reply & filters.text & filters.private & filters.reply)
 async def caption(bot, message):
     file = message.reply_to_message
     if file.media and not file.video_note and not file.sticker:
