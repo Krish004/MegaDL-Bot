@@ -5,7 +5,7 @@
 import os
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", 123))
+    API_ID = int(os.environ.get("API_ID", '1779071'))
     API_HASH = os.environ.get("API_HASH", '3448177952613312689f44b9d909b5d3')
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5284775099:AAGfvarbQNwchELlbs-ZcNJGwnuFez9_vZg")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
