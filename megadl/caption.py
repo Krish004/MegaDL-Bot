@@ -2,7 +2,10 @@
 # A Part of MegaDL-Bot <https://github.com/AsmSafone/MegaDL-Bot>
 
 from config import Config
-from pyrogram import Client, filters
+from pyrogram.raw import functions, types
+from pyrogram.types import Message, ChatPermissions
+from pyrogram import filters, Client, ContinuePropagation
+
 
 @Client.on_message(filters.reply & filters.text & filters.private & ~filters.edited)
 async def caption(bot, message):
